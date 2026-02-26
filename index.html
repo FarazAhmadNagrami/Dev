@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Faraz Ahmad - Senior Software Engineer Portfolio" />
+  <meta name="author" content="Faraz Ahmad" />
+  <meta name="keywords" content="Faraz Ahmad, Software Engineer, Java, Spring Boot, AWS, React, Python" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <title>Faraz Ahmad | Senior Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">FA</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>FA<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+    </div>
+    <a href="https://drive.google.com/file/d/10zo7Ajk4suWnFWMje0XTleULmzU81qtS/view?usp=sharing" target="_blank" class="nav-cta">
+      <i class="fa fa-download"></i> Resume
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#achievements" class="mobile-link">Achievements</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line" id="nameLine1">Faraz</span>
+        <span class="name-line gradient-text" id="nameLine2">Ahmad</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">I'm a </span>
+        <span id="typed-text" class="role-typed"></span>
+      </div>
+      <p class="hero-desc">
+        Senior Software Engineer crafting high-performance systems at <strong>Samsung (Invictus)</strong>.
+        Specializing in microservices, cloud architecture, and scalable backends that power real business impact.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Exp</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="40">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Perf Boost</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="25">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Cost Reduced</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="250">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">LeetCode Solved</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#experience" class="btn-primary">
+          View My Work <i class="fa fa-arrow-right"></i>
+        </a>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/faraz-ahmad18/" target="_blank" class="social-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/FarazAhmadNagrami" target="_blank" class="social-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://leetcode.com/fa6879/" target="_blank" class="social-btn" aria-label="LeetCode">
+            <i class="fa-solid fa-code"></i>
+          </a>
+          <a href="mailto:fa6879@gmail.com" class="social-btn" aria-label="Email">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="https://x.com/FarazAhmad0018" target="_blank" class="social-btn" aria-label="X / Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://instagram.com/faraz_ahmad18" target="_blank" class="social-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap" data-aos="fade-right" data-aos-delay="100">
+          <div class="image-frame">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/Professional-Picture-Me.webp" alt="Faraz Ahmad" />
+              <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Faraz Ahmad" class="about-photo" />
+            </picture>
+            <div class="image-decoration"></div>
+          </div>
+          <div class="about-info-card">
+            <div class="info-row"><i class="fa fa-map-marker-alt"></i> Bengaluru, Karnataka</div>
+            <div class="info-row"><i class="fa fa-briefcase"></i> Invictus (Samsung)</div>
+            <div class="info-row"><i class="fa fa-graduation-cap"></i> B.Tech Software Eng — CGPA 8.8</div>
+            <div class="info-row"><i class="fa fa-envelope"></i> fa6879@gmail.com</div>
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="about-greeting">Hello, I'm Faraz! <span class="wave">👋</span></h3>
+          <p>
+            I'm a <strong>Senior Software Engineer</strong> at Invictus (Samsung) with 4+ years of experience
+            building enterprise-grade systems. I specialize in microservices architecture, cloud-native
+            development, and performance engineering.
+          </p>
+          <p>
+            My expertise spans the full backend stack — from crafting high-performance caching layers
+            with <strong>Featurebase DB</strong> achieving 40% query improvements, to migrating
+            <strong>Apache Airflow</strong> DAGs from AWS to GCP yielding 25% cost reduction.
+          </p>
+          <p>
+            Beyond code, I'm a competitive programmer with a <strong>4-star CodeChef rating</strong>
+            (max 1936) and Institute Rank 1. I hold certifications from <strong>IIT Kharagpur</strong>
+            in Deep Learning Specialization.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-chip"><i class="fa fa-check-circle"></i> Microservices Expert</div>
+            <div class="highlight-chip"><i class="fa fa-check-circle"></i> Cloud Native (AWS & GCP)</div>
+            <div class="highlight-chip"><i class="fa fa-check-circle"></i> Performance Engineering</div>
+            <div class="highlight-chip"><i class="fa fa-check-circle"></i> CI/CD Automation</div>
+            <div class="highlight-chip"><i class="fa fa-check-circle"></i> ML & Deep Learning</div>
+            <div class="highlight-chip"><i class="fa fa-check-circle"></i> Competitive Programmer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Use</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      </div>
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon-wrap"><i class="fa fa-code"></i></div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-icons-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JS</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-typescript-plain colored"></i>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon-wrap"><i class="fa fa-layer-group"></i></div>
+            <h3>Frameworks</h3>
+          </div>
+          <div class="skill-icons-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-spring-plain colored"></i>
+              <span>Spring</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-icon-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="express-icon" alt="Express" />
+              <span>Express</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-tensorflow-original colored"></i>
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-selenium-original colored"></i>
+              <span>Selenium</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon-wrap"><i class="fa fa-cloud"></i></div>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-icons-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-amazonwebservices-plain colored"></i>
+              <span>AWS</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-googlecloud-plain colored"></i>
+              <span>GCP</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-docker-plain colored"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-kubernetes-plain colored"></i>
+              <span>Kubernetes</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-jenkins-line colored"></i>
+              <span>Jenkins</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon-wrap"><i class="fa fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-icons-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-icon-item">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/snowflake.svg" class="express-icon" alt="Snowflake" style="filter:invert(1) sepia(1) saturate(3) hue-rotate(175deg) brightness(1.2);" />
+              <span>Snowflake</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-redis-plain colored"></i>
+              <span>Redis</span>
+            </div>
+            <div class="skill-icon-item">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlebigquery.svg" alt="BigQuery" style="width:2rem;height:2rem;filter:invert(42%) sepia(90%) saturate(500%) hue-rotate(185deg) brightness(1.1);" />
+              <span>BigQuery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Career Path</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Job 1: Samsung Invictus -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-marker">
+            <div class="marker-dot pulse-ring"></div>
+          </div>
+          <div class="timeline-card featured">
+            <div class="tc-header">
+              <div class="tc-company-info">
+                <h3 class="tc-role">Senior Software Engineer</h3>
+                <div class="tc-company">
+                  <i class="fa fa-building"></i>
+                  Invictus (Samsung)
+                </div>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-date"><i class="fa fa-calendar"></i> Jan 2024 – Present</span>
+                <span class="tc-location"><i class="fa fa-map-marker-alt"></i> Bengaluru, KA</span>
+                <span class="tc-badge current">Current</span>
+              </div>
+            </div>
+            <div class="tc-tech-row">
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">GCP</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Grafana</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Apache Airflow</span>
+            </div>
+            <ul class="tc-achievements">
+              <li>
+                <span class="achievement-metric">40% improvement</span>
+                <span>Engineered a high-performance caching layer using in-memory bitmap <strong>Featurebase DB</strong> and Python for Samsung's large-scale dataset querying.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">GCP Production</span>
+                <span>Architected microservices with <strong>Spring Boot</strong> for business logic processing on PostgreSQL, deployed on GCP Compute Engine with Docker &amp; Kubernetes orchestration.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">60% faster detection</span>
+                <span>Designed comprehensive <strong>Grafana</strong> dashboards to monitor application performance, reducing mean time to detection of critical issues.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">60% less deploy time</span>
+                <span>Built campaign analytics app using <strong>React.js</strong> with automated CI/CD pipelines leveraging Docker and GCP CodeBuild.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">25% cost reduction</span>
+                <span>Successfully migrated <strong>Apache Airflow</strong> DAGs from AWS to GCP, optimizing Spark jobs to BigQuery for improved workflow performance.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2: CommerceIQ -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-company-info">
+                <h3 class="tc-role">Software Engineer</h3>
+                <div class="tc-company">
+                  <i class="fa fa-building"></i>
+                  CommerceIQ
+                </div>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-date"><i class="fa fa-calendar"></i> Aug 2022 – Dec 2023</span>
+                <span class="tc-location"><i class="fa fa-map-marker-alt"></i> Bengaluru, KA</span>
+              </div>
+            </div>
+            <div class="tc-tech-row">
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">SNS</span>
+              <span class="tech-tag">Step Functions</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">Snowflake</span>
+              <span class="tech-tag">Amazon RDS</span>
+            </div>
+            <ul class="tc-achievements">
+              <li>
+                <span class="achievement-metric">24h → 2h lag</span>
+                <span>Engineered real-time data synchronization workflow using <strong>AWS Lambda, Spring Boot</strong> microservices, SNS, and Step Functions.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">3 clients/sec</span>
+                <span>Built automated report generation service with <strong>Node.js, MySQL</strong>, and Handlebars with Mailchimp &amp; Jenkins automation.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">70% less overhead</span>
+                <span>Implemented SLA tracking microservice using <strong>Spring Boot, AWS SQS</strong> and Lambda with Amazon RDS storage.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">90% time reduction</span>
+                <span>Automated daily report processing using <strong>Selenium</strong>, reducing download/backfill operations from 1 hour to 45 seconds.</span>
+              </li>
+              <li>
+                <span class="achievement-metric">50% faster scraping</span>
+                <span>Optimized Amazon Vendor Central data scraping via <strong>multi-threading</strong> for concurrent data retrieval.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Sign Language Detector -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/SignLanguageDetector.webp" />
+              <img src="./assets/img/jpg/SignLanguageDetector.jpg" alt="Sign Language Detector" />
+            </picture>
+            <div class="project-overlay">
+              <a href="https://github.com/FarazAhmadNagrami/Sign-language-Detector" target="_blank" class="overlay-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">ML / Computer Vision</div>
+            <h3 class="project-title">Sign Language Detector</h3>
+            <p class="project-desc">
+              Real-time Indian Sign Language recognition system achieving <strong>93.39% accuracy</strong> using CNNs
+              with Keras/TensorFlow. Custom dataset of 1,500+ images with Gaussian blur preprocessing.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>Tkinter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FarazAhmadNagrami/Sign-language-Detector" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Career Hunt -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/careerhunt.webp" />
+              <img src="./assets/img/jpg/careerhunt.jpg" alt="Career Hunt" />
+            </picture>
+            <div class="project-overlay">
+              <a href="https://github.com/FarazAhmadNagrami/Career_Hunt" target="_blank" class="overlay-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">Full Stack</div>
+            <h3 class="project-title">Career Hunt</h3>
+            <p class="project-desc">
+              Interactive CRUD platform for professionals to showcase skills. React frontend with Node.js backend,
+              MongoDB Atlas, with features for images, tags, and social interactions.
+            </p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FarazAhmadNagrami/Career_Hunt" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Gossip -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/gossip.webp" />
+              <img src="./assets/img/jpg/gossip.jpg" alt="Gossip Chat" />
+            </picture>
+            <div class="project-overlay">
+              <a href="https://github.com/FarazAhmadNagrami/GOSSIP-real-time-chat-website-" target="_blank" class="overlay-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">Real-Time</div>
+            <h3 class="project-title">Gossip — Chat App</h3>
+            <p class="project-desc">
+              Real-time chat web application built with WebSockets. Responsive React frontend with Node.js backend
+              and MongoDB Atlas for persistent message storage.
+            </p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>WebSockets</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FarazAhmadNagrami/GOSSIP-real-time-chat-website-" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Beekin Jobs Portal -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-image">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/jobs.webp" />
+              <img src="./assets/img/jpg/jobs.jpg" alt="Beekin Jobs Portal" />
+            </picture>
+            <div class="project-overlay">
+              <a href="https://github.com/FarazAhmadNagrami/JobsPortalBackendFrontend" target="_blank" class="overlay-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-type">Full Stack</div>
+            <h3 class="project-title">Beekin — Jobs Portal</h3>
+            <p class="project-desc">
+              Full-stack job portal with Vue.js frontend and Node.js/Express backend. MongoDB database for
+              persistent storage with full CRUD operations for job listings and applications.
+            </p>
+            <div class="project-tech">
+              <span>Vue.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FarazAhmadNagrami/JobsPortalBackendFrontend" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS SECTION ===== -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="achievements-grid">
+
+        <!-- Competitive Programming -->
+        <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="achievement-icon">
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>4-Star CodeChef Coder</h3>
+            <p>Maximum rating of <strong>1936</strong> with Institute Rank 1 at Galgotias University</p>
+            <a href="https://www.codechef.com/users/faraz6879" target="_blank" class="achievement-link">
+              View Profile <i class="fa fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contest -->
+        <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="achievement-icon">
+            <i class="fa fa-trophy"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>CodeChef LunchTime</h3>
+            <p>Secured <strong>243rd rank</strong> among 5,364 candidates with Institute Rank 1</p>
+          </div>
+        </div>
+
+        <!-- Certification: Deep Learning -->
+        <div class="achievement-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="achievement-icon">
+            <i class="fa fa-certificate"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Deep Learning Specialization</h3>
+            <p>Certified by <strong>IIT Kharagpur</strong> — Neural networks, CNNs, RNNs, and optimization techniques</p>
+          </div>
+        </div>
+
+        <!-- Recognition -->
+        <div class="achievement-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="achievement-icon">
+            <i class="fa fa-award"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Technical Recognition at Samsung</h3>
+            <p>Recognized for exceptional <strong>performance optimization</strong> and cost reduction at current role</p>
+          </div>
+        </div>
+
+        <!-- Cisco -->
+        <div class="achievement-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="achievement-icon">
+            <i class="fa fa-network-wired"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Cisco — Intro to Networks</h3>
+            <p>Certified in networking fundamentals, protocols, and OSI model architecture</p>
+          </div>
+        </div>
+
+        <!-- LeetCode -->
+        <div class="achievement-card" data-aos="zoom-in" data-aos-delay="600">
+          <div class="achievement-icon">
+            <i class="fa fa-code"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>LeetCode 250+ Solved</h3>
+            <p>Solved <strong>250+ problems</strong> on LeetCode strengthening DSA and problem-solving skills</p>
+            <a href="https://leetcode.com/fa6879/" target="_blank" class="achievement-link">
+              View Profile <i class="fa fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FOOTER ===== -->
+  <footer id="contact">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-cta" data-aos="fade-up">
+          <h2>Let's Build Something <span class="gradient-text">Amazing</span></h2>
+          <p>Open to exciting opportunities, collaborations, and interesting conversations.</p>
+          <a href="mailto:fa6879@gmail.com" class="btn-primary large">
+            <i class="fa fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+        <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+          <div class="footer-nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/faraz-ahmad18/" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/FarazAhmadNagrami" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://leetcode.com/fa6879/" target="_blank" aria-label="LeetCode">
+              <i class="fa-solid fa-code"></i>
+            </a>
+            <a href="https://www.codechef.com/users/faraz6879" target="_blank" aria-label="CodeChef">
+              <i class="fa-solid fa-utensils"></i>
+            </a>
+            <a href="mailto:fa6879@gmail.com" aria-label="Email">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://x.com/FarazAhmad0018" target="_blank" aria-label="X / Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/faraz_ahmad18" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed & Built by <strong>Faraz Ahmad</strong> &nbsp;·&nbsp; &copy; 2025</p>
+        <p class="footer-stack">Built with HTML · CSS · JavaScript · GSAP · AOS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Main Animation Script -->
+  <script src="./assets/js/animations.js"></script>
+</body>
+</html>
